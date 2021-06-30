@@ -21,7 +21,6 @@ const $render = document.querySelector('.countries__render'),
 $input.addEventListener('input', debounce(handleInput, 500));
 
 function updateView(currencies) {
-    $input.value = '';
     $render.insertAdjacentHTML('beforeend', renderCountry(currencies));
 }
 
@@ -63,7 +62,6 @@ function renderResult(array) {
                 ]
             ])
         });
-        updateList(array);
         return;
     }
     else {
