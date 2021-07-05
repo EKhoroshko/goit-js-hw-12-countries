@@ -6,4 +6,3 @@ export default function getNameCountry(searchQuery) {
         throw new Error(response.statusText);
     });
 }
-
