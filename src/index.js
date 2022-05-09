@@ -38,7 +38,7 @@ function handleInput() {
 function renderResult(array) {
     if (array.length === 1) {
         updateView(array);
-    } else if (array.length > 10) {
+    } else if (array.length > 30) {
         alert({
             text: 'Too many matches found. Please enter a more specific query!',
             width: '400px',
